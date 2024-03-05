@@ -1,6 +1,6 @@
 # \# GBFRMotionTools
 
-This tool inspired by [Nier2Blender2Nier](https://github.com/WoefulWolf/NieR2Blender2NieR) and [GBFR2Blender2GBFR](https://github.com/WistfulHopes/GBFR2Blender2GBFR),
+This tool is inspired by [Nier2Blender2Nier](https://github.com/WoefulWolf/NieR2Blender2NieR) and [GBFR2Blender2GBFR](https://github.com/WistfulHopes/GBFR2Blender2GBFR),
 and simplify the dependencies of module / package, focus on dump / batch processing mot-file in CLI.
 
 # \# Setup
