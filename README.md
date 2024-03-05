@@ -23,7 +23,7 @@ python.exe get-pip-py
 
 - Install package by pip
 ```
-python.exe Scripts\pip install <package_name>
+python.exe Scripts\pip.exe install <package_name>
 ```
 
 # \# Package dependency
