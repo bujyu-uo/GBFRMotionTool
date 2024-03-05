@@ -1,7 +1,10 @@
 [
     {
-        "description": "transform bone _000",
+        "description": "transform bone _000 with subtracting 0.026782 on y-axis",
+        "//conditions": "all conditions will test IN ORDER, and stop when any condition test is false",
         "//conditions.field": "please check the dump content of .mot",
+        "//conditions.field.propertyIndex.0": "0, 1, 2: location; 3, 4, 5: rotation_euler; 6, 7, 8: scale",
+        "//conditions.field.propertyIndex.1": "0, 3, 6: x-axis;   1, 4, 7: y-axis;         2, 5, 8: z-axis",
         "//conditions.operator": [ "==", ">=", "<=", ">", "<" ],
         "conditions": [
             {
