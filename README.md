@@ -45,6 +45,11 @@ options:
   --task TASK, -t TASK  Task file for modifying the mot file
 ```
 
+# \# Limitaions
+
+1. Only support to batch modify which record field ```interpolationType``` is 0 / 1.
+
+
 # \# File \<task-file\>
 
 ## sample_task.json
