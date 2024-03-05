@@ -1,10 +1,36 @@
-# GBFRMotionTools
+# \# GBFRMotionTools
 
 This tool inspired by [Nier2Blender2Nier](https://github.com/WoefulWolf/NieR2Blender2NieR) and [GBFR2Blender2GBFR](https://github.com/WistfulHopes/GBFR2Blender2GBFR),
 and simplify the dependencies of module / package, focus on dump / batch processing mot-file in CLI.
 
+# \# Setup
 
-# Usage
+You can use your python setup on environment
+
+OR, download the python embeddable package and rename the ```python<python_ver>._pth``` under the folder.
+
+## How to install pip and install pacakge for python embbedable pacakage on windows
+
+- Get get-pip-py 
+```
+https://pip.pypa.io/en/stable/installation/#get-pip-py
+```
+
+- Install pip tool
+```
+python.exe get-pip-py
+```
+
+- Install package by pip
+```
+python.exe Scripts\pip install <package_name>
+```
+
+# \# Package dependency
+
+  - jsonpickle (pip)
+
+# \# Usage
 
 ```
 usage: cli.py [-h] --file FILE [--action ACTION] [--output OUTPUT] [--task TASK]
