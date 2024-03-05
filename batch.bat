@@ -1,6 +1,10 @@
 @echo off
 
-set pybin="c:\Users\USER\.local\python-3.11.8-embed-amd64\python.exe"
+set pybin=""
+
+if "%pybin%" == "" do (
+    echo "(SETUP) Please set variable 'pybin' to target the path of python executable"
+)
 
 rem Forcely change to folder batch script in
 cd %~dp0
