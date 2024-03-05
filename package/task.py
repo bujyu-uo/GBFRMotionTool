@@ -64,7 +64,7 @@ def _task_op_modifier(t, it: tuple[int, mot.MotRecord]) -> None:
             print(f"Unsupported interpolation type for modifying: {it[1].interpolationType}", file=sys.stderr)
             continue
         if m['operator'] not in _record_modifier_op:
-            print(f"Unsupported operator for modifying: {m['operatort']}", file=sys.stderr)
+            print(f"Unsupported operator for modifying: {m['operator']}", file=sys.stderr)
             continue
         modifier = _record_modifier[it[1].interpolationType]
         modifier_op = _record_modifier_op[m['operator']]
