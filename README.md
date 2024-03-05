@@ -45,4 +45,42 @@ options:
   --task TASK, -t TASK  Task file for modifying the mot file
 ```
 
-For \<task-file\>, please check the "sample_task.json" for more detail. 
+# \# File \<task-file\>
+
+## sample_task.json
+```
+[
+    {
+        "description": "transform bone _000 with subtracting 0.026782 on y-axis",
+        "//conditions.field": "please check the dump content of .mot",
+        "//conditions.operator": [ "==", ">=", "<=", ">", "<" ],
+        "conditions": [
+            {
+                "field": "boneIndex",
+                "operator": "==",
+                "value": 0
+            },
+            {
+                "field": "propertyIndex",
+                "operator": "==",
+                "value": 1
+            },
+            {
+                "field": "interpolationType",
+                "operator": "==",
+                "value": 1
+            }
+        ],
+        "//modifications": "all operators will apply IN ORDER, and apply to record.value / record.interpolation.value / record.interpolation.values according to record.interpolationType",
+        "//modifications.operator": [ "+", "-", "*", "/", "//", "=" ],
+        "//modifications.operator.//": "(PYTOHN) floored quotient",
+        "//modifications.operator.=": "overwrite",
+        "modifications": [
+            {
+                "operator": "-",
+                "value": 0.026782
+            }
+        ]
+    }
+]
+```
