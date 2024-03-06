@@ -1,2 +1,16 @@
+# default rule: ignore all files except for .gitignore
+!.gitignore
+*
 
+# track whitelist
+!README.md
+!LICENSE.txt
+!cli.py
+!batch.bat
+!sample_task.json
+!package/
+!package/*
+
+# ignore python cache
 __pycache__
+**/__pycache__
