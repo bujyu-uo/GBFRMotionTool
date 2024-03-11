@@ -5,7 +5,9 @@
         "//conditions.field": "please check the dump content of .mot",
         "//conditions.field.propertyIndex.0": "0, 1, 2: location; 3, 4, 5: rotation_euler; 6, 7, 8: scale",
         "//conditions.field.propertyIndex.1": "0, 3, 6: x-axis;   1, 4, 7: y-axis;         2, 5, 8: z-axis",
-        "//conditions.operator": [ "==", ">=", "<=", ">", "<" ],
+        "//conditions.operator": [ "==", ">=", "<=", ">", "<", "&", "|" ],
+        "//conditions.value.0": "Supoort string with numerical representation",
+        "//conditions.value.1": "hex (0xNNNN), oct (0NNNN), bin (0bNNNN)",
         "conditions": [
             {
                 "field": "boneIndex",
@@ -14,11 +16,6 @@
             },
             {
                 "field": "propertyIndex",
-                "operator": "==",
-                "value": 1
-            },
-            {
-                "field": "interpolationType",
                 "operator": "==",
                 "value": 1
             }
